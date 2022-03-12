@@ -12,7 +12,6 @@
 
 #ifndef FRACTOL_BONUS_H
 # define FRACTOL_BONUS_H
-# include "../libft/libft.h"
 # include <unistd.h>
 # include <fcntl.h>
 # include <stdlib.h>
@@ -129,4 +128,7 @@ int				choose_fractol(t_vars *vars, char *str);
 void			print_prompt(void);
 void			draw_help_1(t_vars *vars);
 void			draw_help_2(t_vars *vars);
+int				ft_strncmp(const char *s1, const char *s2, size_t n);
+size_t			ft_strlen(const char *s);
+void			ft_putendl(char *s);
 #endif
