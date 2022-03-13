@@ -6,7 +6,7 @@
 /*   By: cgregory <cgregory@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/28 15:10:30 by cgregory          #+#    #+#             */
-/*   Updated: 2022/03/05 21:42:47 by cgregory         ###   ########.fr       */
+/*   Updated: 2022/03/13 22:09:20 by cgregory         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,6 @@ void	calc_fractol_1(t_data *p_img)
 	int		x;
 	int		y;
 	t_color	color_left;
-
 
 	y = 1;
 	while (y < HEIGHT)
