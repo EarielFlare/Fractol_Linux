@@ -32,8 +32,8 @@ CC				=	gcc
 CFLAGS			=	-Wall -Wextra -Werror
 RM				=	rm -rf
 .PHONY			:	all clean fclean re bonus
-all				:	$(LIBFT_NAME) $(NAME)
-bonus			:	$(LIBFT_NAME) $(NAME_BONUS)
+all				:	$(NAME)
+bonus			:	$(NAME_BONUS)
 $(NAME)			:	$(OBJ) $(HEADERS)$(FRACTOL_H)
 					@rm -rf $(OBJ_BONUS)
 					@$(CC) $(OBJ)\

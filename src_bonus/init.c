@@ -6,7 +6,7 @@
 /*   By: cgregory <cgregory@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/02 20:48:42 by cgregory          #+#    #+#             */
-/*   Updated: 2022/03/13 22:10:33 by cgregory         ###   ########.fr       */
+/*   Updated: 2022/03/05 20:38:07 by cgregory         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,9 @@ void	init_fractol(t_vars *vars)
 	set_defaults(vars);
 	vars->win = mlx_new_window(vars->mlx,
 			vars->win_width, vars->win_height, "FRACTOL");
-	mlx_hook(vars->win, 2, 1L << 0, key_hook, vars);
-	mlx_hook(vars->win, 4, 1L << 2, mouse_hook, vars);
-	mlx_hook(vars->win, 6, 1L << 6, mouse_move, vars);
+	mlx_hook(vars->win, 2, 1L<<0, key_hook, vars);
+	mlx_hook(vars->win, 4, 1L<<2, mouse_hook, vars);
+	mlx_hook(vars->win, 6, 1L<<6, mouse_move, vars);
 	mlx_hook(vars->win, 17, 0L, close_win, vars);
 }
 
